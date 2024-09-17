@@ -14,7 +14,9 @@ class Vertex {
         Vertex v3 = v1.skalarMult(2);
         System.out.println(v1.length());
         System.out.println(v2.length());
-
+        System.out.println(v1.equals(v3));
+        System.out.println(v1.equals(v1));
+        
     }
 
     public double length() {
@@ -44,11 +46,11 @@ class Vertex {
         y += v2.y;
     }
 
-    public double setX(double x) {
+    public double setX (double x) {
         this.x = x;
     }
 
-    public double setY(double y) {
+    public double setY (double y) {
         this.y = y;
     }
 
@@ -61,9 +63,9 @@ class Vertex {
     }
 
 public boolean equals(Object thatObject){
-    if (that instanceof Object){
-        that Vertex = (Vertex) thatObject;
-        return this.x==thatObject.x && this.y==thatObject.y;
+    if (thatObject instanceof Object){
+        Vertex that = (Vertex) thatObject;
+        return this.x==that.x && this.y==that.y;
     }
     return false;
 }
