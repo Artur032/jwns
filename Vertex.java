@@ -1,4 +1,4 @@
-package JWNS26.src;
+
 
 class Vertex {
   public double x;
