@@ -93,6 +93,7 @@ public class GeometricObject {
     }
  
     public String toString () {
-        return " pos: " + pos + " w: " + width + " h: " + heigth;
+        return "pos: " + pos + " w: " + width + " h: " + heigth;
     }                                                                                                  
-}                                                                                                                                                                                                                                
+}                                                                                                                                                                                                                                                                
+ 

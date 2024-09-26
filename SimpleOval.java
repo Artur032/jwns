@@ -1,16 +1,19 @@
-public class SimpleOval extends GeometricObject{
-    public SimpleOval (Vertex pos, double width, double height) {
-        super(pos, width, height);
-
-
+public class SimpleOval  extends GeometricObject {
+    public SimpleOval (Vertex pos, double width, double heigth) {
+        super (pos, width, heigth);
+ 
+ 
     }
-
-    public toString () {
-        return "SimpleOval" +super.toString();
+ 
+ 
+    public SimpleOval (double x, double y, double width, double heigth) {
+        super(new Vertex(x, y), width, heigth);
     }
-
-    public SimpleOval (double x, double y, double width, double height) {
-        super(new Vertex(x,y), width, height); 
-
+ 
+ 
+    @Override public String toString () {
+        return "SimpleOval" + super.toString();
     }
+ 
+ 
 }
